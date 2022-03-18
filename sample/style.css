@@ -1,0 +1,23 @@
+header{
+    /* background-color: mediumpurple; */
+    /* border: 1px solid black; */
+}
+
+.slide{
+    /* height: 300px; */
+    /* background-size: cover; */
+}
+.container{
+    /* border: 1px solid blue; */
+}
+
+footer{
+    background-color: mediumpurple;
+    
+}
+section{
+    /* border: 1px solid red; */
+}
+div{
+    border: 1px solid darkgreen;
+}
