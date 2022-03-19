@@ -1,8 +1,10 @@
-header{
-    /* background-color: mediumpurple; */
+header .row{
+    background-color: mediumpurple;
     /* border: 1px solid black; */
 }
-
+header>nav{
+    background-color: rgb(195, 174, 238);
+}
 .slide{
     /* height: 300px; */
     /* background-size: cover; */
@@ -10,14 +12,29 @@ header{
 .container{
     /* border: 1px solid blue; */
 }
-
-footer{
-    background-color: mediumpurple;
-    
-}
 section{
     /* border: 1px solid red; */
 }
 div{
-    border: 1px solid darkgreen;
+    /* border: 1px solid darkgreen; */
+}
+/* 슬라이드 최대크기 설정 */
+.carousel-item {
+    max-height: 32rem;
+  }
+/* 검색창 이동 */
+.search{
+    /* border: 2px solid darkgreen; */
+    position: relative;
+    top: -40px;
+}
+.search > .container{
+    border: 1px solid mediumpurple;
+    border-radius: 45px;
+}
+.search-box1, .search-box2, .search-box3{
+    border: none;
+}
+footer{
+    background-color: mediumpurple;
 }
