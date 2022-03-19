@@ -12,32 +12,49 @@
   <body>
         <div class="bg-light">
             <!-- header 시작 -->
-            <header>
+            <header class="fixed-top bg-white">
                 <!-- 로고 + 로그인/회원가입 버튼 -->
-                <div class="row"><!-- 가로 패딩, 가로세로 마진 -->
+                <div class="row py-3">
                     <div class="col-4"></div>
                     <div class="col-4 d-flex justify-content-center align-items-center">
                         <h1>
                             <i class="bi bi-emoji-smile">로고</i>
                         </h1>
                     </div>
-                    <div class="col-4 d-flex justify-content-end align-items-center">
+                    <div class="col-4 d-flex justify-content-end align-items-center flex-wrap">
                         <a href="#">LOGIN</a>
                         <a class="m-3" href="#">SIGN UP</a>
                     </div>
                 </div>
                 <!-- 네이게이션바 -->
-                <nav class="navbar">
+                <!-- <nav class="navbar navbar-expand-lg">
                     <div class="container justify-content-center">
-                        <ul class="nav">
-                            <li class="nav-item"><a class="nav-link" href="#">실종공고</a></li>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link" aria-current="" href="#">실종공고</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">자유게시판</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">공동구매</a></li>   
                             <li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
                         </ul>
                     </div>
+                </nav> -->
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">실종공고</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">자유게시판</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">공동구매</a></li>   
+                                <li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
+                
             </header>
             <!-- header 종료 -->
 
@@ -91,101 +108,137 @@
 
             <!-- 검색 창 -->
             <div class="search p-3">
-                <div class="container p-2 bg-white">
-                    <div></div>
+                <!-- <div class="container p-2 bg-white">
                     <div class="row">
                         <div class="col p-0"></div>
                         <div class="col p-0">
                             <input type="text" class="search-box1" placeholder="시/도"> 
-                        </div>|
+                        </div> |
                         <div class="col p-0">
                             <input type="text" class="search-box2" placeholder="시/군/구"> 
-                        </div>|
+                        </div> |
                         <div class="col p-0">
                             <input type="text" class="search-box3" placeholder="읍/면/동">
                         </div>
                         <div class="col p-0 text-center">
-                            <button><i class="bi bi-search"></i></button>
+                            <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
                         </div>
+                    </div>
+                </div> -->
+                <div class="container p-2 bg-white">
+                    <div class="d-flex justify-content-around">
+                        <div class="s-box1 p-2">
+                            <input type="text" class="search-box1" placeholder="시/도"> 
+                        </div> 
+                        <div class="s-box2 p-2">
+                            <input type="text" class="search-box2" placeholder="시/군/구"> 
+                        </div> 
+                        <div class="s-box3 p-2">
+                            <input type="text" class="search-box3" placeholder="읍/면/동">
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
             </div>
             <!-- 검색 끝 -->
             
             <!-- 갤러리 -->
-            <section>
+            <section class="container">
                 <div class="py-5">
-                    <div class="container">
-                        <p> 최근 올라온 실종공고</p>
-                        <hr>
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/dog1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">멍멍이 찾습니다.</h5>
-                                        <p class="card-text">부산 전포동/프렌치불독</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                    <p> 최근 올라온 실종공고</p>
+                    <hr>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/dog1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
                                     <h5 class="card-title">멍멍이 찾습니다.</h5>
-                                    <p class="card-text">부산 광안동/견종모름</p>
+                                    <p class="card-text">부산 전포동/프렌치불독</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/dog1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">멍멍이 찾습니다.</h5>
-                                        <p class="card-text">부산 전포동/프렌치불독</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title">멍멍이 찾습니다.</h5>
-                                    <p class="card-text">부산 광안동/견종모름</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/dog1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">멍멍이 찾습니다.</h5>
-                                        <p class="card-text">부산 전포동/프렌치불독</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                    <h5 class="card-title">멍멍이 찾습니다.</h5>
-                                    <p class="card-text">부산 광안동/견종모름</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <hr>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                <p class="card-text">부산 광안동/견종모름</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/dog1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                    <p class="card-text">부산 전포동/프렌치불독</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                <p class="card-text">부산 광안동/견종모름</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/dog1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                    <p class="card-text">부산 전포동/프렌치불독</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                <p class="card-text">부산 광안동/견종모름</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/dog1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                    <p class="card-text">부산 전포동/프렌치불독</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">멍멍이 찾습니다.</h5>
+                                <p class="card-text">부산 광안동/견종모름</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
             </section>
-            
+            <hr class="container">     
+            <section  class="container">
+                <p>about us</p>
+            </section>
+            <hr class="container">  
+            <section  class="container">
+                <p>구매창</p>
+            </section>
             <!-- 갤러리 끝 -->
             <!-- 본문 종료 -->
 
