@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
+    <!-- css스타일 적용 -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- 부트스트랩 적용 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- 부트스트랩 아이콘 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   </head>
-  <body>
-        <div class="bg-light">
+  <body  class="bg-light">
+        <div>
             <!-- header 시작 -->
             <header class="fixed-top bg-white">
                 <!-- 로고 + 로그인/회원가입 버튼 -->
@@ -19,12 +22,12 @@
                     <div class="col-4"></div>
                     <div class="col-4 d-flex justify-content-center align-items-center">
                         <h1>
-                            <i class="bi bi-emoji-smile" style="color: #3f51b5;">Logo</i>
+                           <a href="main.html"><i class="bi bi-emoji-smile" style="color: #3f51b5;">Logo</i></a> 
                         </h1>
                     </div>
-                    <div class="col-4 d-flex justify-content-end align-items-center flex-wrap">
-                        <a class="p-1" href="#">LOGIN</a>
-                        <a class="p-1" href="#">SIGN UP</a>
+                    <div class="col-4 d-flex justify-content-end align-items-center flex-wrap gap-2">
+                        <a class="p-1 btn" style="color: #3f51b5;" href="#">LOGIN</a>
+                        <a class="p-1 btn" style="color: #3f51b5;" href="#">SIGN UP</a>
                     </div>
                 </div>
                 <!-- 네이게이션바 -->
@@ -52,7 +55,7 @@
                                     </li>
                                 </ul> -->
                                 <div class="navbar-nav px-5">
-                                    <a class="nav-link" aria-current="page" href="#">실종공고</a>
+                                    <a class="nav-link" href="find_borad.html">실종공고</a>
                                     <a class="nav-link" href="#">자유게시판</a>
                                     <a class="nav-link" href="#">공동구매</a>
                                     <a class="nav-link" href="#">이벤트</a>
@@ -116,16 +119,18 @@
             <!-- 검색 창 -->
             <div class="search py-3">
                 <div class="container p-2 bg-white">
-                    <form action="" method="">
+                    <form action="" method="get">
                         <div class="d-flex justify-content-around">
                             <div class="s-box1 p-2">
-                                <input type="text" class="search-box1" placeholder="시/도"> 
+                                <input type="text" class="search-box1" id="" placeholder="시/도"> 
                             </div> 
+                            <div class="vr"></div>
                             <div class="s-box2 p-2">
-                                <input type="text" class="search-box2" placeholder="시/군/구"> 
+                                <input type="text" class="search-box2" id="" placeholder="시/군/구"> 
                             </div> 
+                            <div class="vr"></div>
                             <div class="s-box3 p-2">
-                                <input type="text" class="search-box3" placeholder="읍/면/동">
+                                <input type="text" class="search-box3" id="" placeholder="읍/면/동">
                             </div>
                             <button type="submit" class="btn text-white" style="background-color: #3f51b5;"><i class="bi bi-search"></i></button>
                         </div>
@@ -325,7 +330,10 @@
             </footer>
             <!-- footer 종료 -->
         </div>
+
+        <!--스크립트 적용 -->
         <script src="js/main.js"></script>
+        <!-- 부트스트랩 스크립트 적용 -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
