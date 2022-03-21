@@ -52,10 +52,10 @@ div{
 }
 /* 중간에 캠페인 섹션 */
 .campaign{
-    background: url(https://cdn.pixabay.com/photo/2021/05/09/06/07/dog-6240043_960_720.jpg) fixed;
+    background: url(https://cdn.pixabay.com/photo/2021/05/09/06/07/dog-6240043_960_720.jpg);
     height: 400px;
     /* background-position: center; */
-    background-size: cover;
+    background-size: contain;
     /* background-repeat: no-repeat; */
 }
 .campaign-text{
