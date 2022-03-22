@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: ;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-inner {
+    position: fixed;
+    border-radius: 8px;
+    padding: 3%;    
+    top: 20%;
+    left: 33%;
+    width: 300px;
+    text-align: center;
+    background-color: ghostwhite;
+}
+
+.title {font-size: larger;
+        font-weight: bold;}
+
+.login {background-color: #3f51b5;
+        color: white;
+        width: 180px;
+        margin-top: 8px;
+        padding: 5px;}
+
+.kakao {background-color: #F7E600;
+        margin-bottom: 1%;}
+
+.naver {background-color: #00c43b;
+        margin-bottom: 1%;}
+
+.google {background-color: white;
+         color: rgb(234,067,053);
+         border: solid rgb(234,067,053);}
