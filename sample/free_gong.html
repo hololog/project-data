@@ -41,24 +41,8 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <!-- <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" aria-current="page" href="#">실종공고</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">자유게시판</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">공동구매</a>
-                                </li>   
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">이벤트</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">ABOUT US</a>
-                                </li>
-                            </ul> -->
-                            <div class="navbar-nav px-5 col-md-12 nav justify-content-center bg-light">
+                           
+                            <div class="navbar-nav px-5 col-md-12 nav justify-content-around bg-light">
 
                             
                                 <a class="nav-link" href="find_borad.html">실종공고</a>
@@ -77,11 +61,38 @@
         <!-- header 끝 -->
 
         <!-- 게시판 시작 -->
-        <div class="container">
-          <h3 class="text-center"><a href="#">자유게시판</a></h3> 
-          <br>
-          <br>
-          <table class="table table-hover table-striped text-center" style="border: 1px solid;">
+
+        <!-- 게시판종류 시작 -->
+        <div class="container mt-3">
+
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">자유</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">꿀팁</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">입양후기</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">나눔</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">공지</a>
+                  </li>
+              </ul>
+        </div>
+        <!-- 게시판종류 끝 -->
+      <br>
+      <!-- 현재위치 -->
+      <h3 class="text-center  nav justify-content-center bg-light" style="color: #3f51b5;">
+        <a href="#">공지</a></h3>
+      <br>
+      <!-- 게시판 -->
+        <div class="container mt-3">
+            
+          <table class="table table-hover text-center" >
             <thead>
               <tr>
                   <th>번호</th>
@@ -122,20 +133,22 @@
 
             </tbody>
           </table>
-
+          <!-- 글쓰기버튼 -->
           <hr/>
-          <a class="btn btn-default pull-right">글쓰기</a>
-
-          <div class="text-center col-md-12 nav justify-content-center bg-light">
-            <ul class="pagination">
-              <li><a href="#">◁</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">▷</a></li>
-            </ul>
+          <div class="col-11 d-flex justify-content-end align-items-center flex-wrap gap-2">
+             <button type="button" class="btn btn-outline-primary ">글쓰기</button>
+          </div>
+          <!-- 다음버튼 -->
+          <div class="text-center">
+                <ul class="pagination justify-content-center" style="margin:20px 0">
+                    <li class="page-item"><a class="page-link" href="#">◁</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">▷</a></li>
+                </ul>
           </div>
       </div>
 
