@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main</title>
+    <!-- css스타일 적용 -->
+    <link rel="stylesheet" href="css/search_write.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- 부트스트랩 적용 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- 부트스트랩 아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  </head>
+  <body  class="bg-light">
+            <!-- header 시작-->
+            <header class="fixed-top bg-white">
+                <!-- 로고 + 로그인/회원가입 버튼 -->
+                <div class="row py-3 mx-3">
+                    <div class="col-4"></div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <h1>
+                           <a href="main.html"><i class="bi bi-emoji-smile" style="color: #3f51b5;">Logo</i></a> 
+                        </h1>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center flex-wrap gap-2">
+                        <a class="p-1 btn" style="color: #3f51b5;" href="#">LOGIN</a>
+                        <a class="p-1 btn" style="color: #3f51b5;" href="#">SIGN UP</a>
+                    </div>
+                </div>
+                <!-- 네이게이션바 -->
+                    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <!-- <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" aria-current="page" href="#">실종공고</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">자유게시판</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">공동구매</a>
+                                    </li>   
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">이벤트</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="#">ABOUT US</a>
+                                    </li>
+                                </ul> -->
+                                <div class="navbar-nav px-5">
+                                    <a class="nav-link" href="find_borad.html">실종공고</a>
+                                    <a class="nav-link" href="#">자유게시판</a>
+                                    <a class="nav-link" href="#">공동구매</a>
+                                    <a class="nav-link" href="#">이벤트</a>
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                
+            </header> 
+            <!-- header 종료 -->
+            <!-- ------------------------------- -->
+            <!-- 본문 시작-->
+            <!-- ------------------------------- -->
+
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-6">
+                        <img src="img/dog1.jpg" class="img-thumbnail" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <form id="search_form" action="get">
+                            <!--해결 <-> 미해결 토글버튼 클릭시 글자도 바뀌어야 함-->
+                            <div class="row">
+                                <div class="col-12 form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="swticheh">
+                                    <label class="form-check-label" for="switcheh">미해결</label>
+                                </div>
+                            </div>
+        
+        
+                            <!-- 테스트중~~~!!! -->
+                            <div class="row-cols-6">
+                                <input type="text" class="col-4"placeholder="text">
+                                <textarea class="col-8" placeholder="textarea"></textarea>
+                                <input type="text" class="col-4" placeholder="text">
+                                <input type="text" class="col-4"placeholder="text">
+                                <input type="text" class="col-4"placeholder="text">
+                            </div>
+        
+        
+                    <form action="get">
+                        <!-- <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">미해결</label>
+                        </div>   -->
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="animal_category">동물 종류</label>
+                                <select class="form-select" id="animal_category" name="animal_category">
+                                    <option selected>선택해주세요</option>
+                                    <option value="dog">개</option>
+                                    <option value="cat">고양이</option>                
+                                    <option value="etc">기타</option>                
+                                </select>
+                        </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text"> 동물이름 </label>
+                                    <input type="text" class="form-control" value="name" placeholder="숫자만 기입하세요">
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text"> 동물나이 </label>
+                                    <input type="text" class="form-control" value="age" placeholder="숫자만 기입하세요">
+                            </div>
+                            <div class="mb-2">동물 성별
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sex" id="ra1">
+                                <label class="form-check-label" for="ra1">
+                                암컷</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sex" id="ra2">
+                                <label class="form-check-label" for="ra2">
+                                수컷</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="sex" id="ra3">
+                                <label class="form-check-label" for="ra3">
+                                모름</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label>실종 지역</label>
+                                <select>
+                                    <option value="" selected>시</option>
+                                    <option value="">부산광역시</option>
+                                    <option value="">서울특별시</option>
+                                    <option value="">광주광역시</option>
+                                </select>
+                                <select>
+                                    <option value="" selected>남구</option>
+                                    <option>수영구</option>
+                                    <option>부산진구</option>
+                                </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="file" class="form-control" id="multipleFile">
+                            <label for="multipleFile">*파일첨부는 최대 xx장까지 가능합니다.</label>
+                            <!-- <label class="form-control" for="file2">Choose file</label>
+                            <input type="file" class="custom-file-input" id="file2">
+                            <label class="form-control" for="file3">Choose file</label>
+                            <input type="file" class="custom-file-input" id="file3"> -->
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">With textarea</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                    </form>
+        
+        
+        
+                            <div class="row">
+                                <div class="col input-group mb-3">
+                                    <label class="input-group-text" for="animal_category">동물 종류</label>
+                                        <select class="form-select" id="animal_category" name="animal_category">
+                                            <option selected>선택해주세요</option>
+                                            <option value="dog">개</option>
+                                            <option value="cat">고양이</option>                
+                                            <option value="etc">기타</option>                
+                                        </select>
+                                </div>                    
+                            <!-- </div>
+                            <div class="row"> -->
+                                <div class="col input-group mb-3">
+                                    <label class="input-group-text"> 동물 이름 </label>
+                                    <input type="text" class="form-control" value="" placeholder="숫자만 기입하세요">
+                                </div>
+                            <!-- </div>
+                            <div class="row"> -->
+                                <div class="col input-group mb-3">
+                                    <label class="input-group-text"> 동물 나이 </label>
+                                    <input type="text" class="form-control" value="age" placeholder="숫자만 기입하세요">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-12 mb-2">동물 성별 
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="ra1">
+                                        <label class="form-check-label" for="ra1">암컷</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="ra2">
+                                        <label class="form-check-label" for="ra2">수컷</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="ra3">
+                                        <label class="form-check-label" for="ra3">모름</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="input-group mb-sm-3">
+                                        <label class="input-group-text" for="city">실종 지역</label>
+                                            <select class="form-select">
+                                                <option selected>시</option>
+                                                <option value="">부산광역시</option>
+                                                <option value="">서울특별시</option>
+                                                <option value="">광주광역시</option>
+                                            </select>
+                                            <select class="form-select">
+                                                <option selected>구</option>
+                                                <option>수영구</option>
+                                                <option>부산진구</option>
+                                            </select>
+                                            <select class="form-select">
+                                                <option selected>동</option>
+                                                <option>광안동</option>
+                                                <option>망미동</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-3">
+                                    <input type="file" class="form-control" id="multipleFile">
+                                    <label for="multipleFile">*파일첨부는 최대 xx장까지 가능합니다.</label>
+                                    <!-- <label class="form-control" for="file2">Choose file</label>
+                                    <input type="file" class="custom-file-input" id="file2">
+                                    <label class="form-control" for="file3">Choose file</label>
+                                    <input type="file" class="custom-file-input" id="file3"> -->
+                                </div>
+                            </div>
+                            <div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">특징 및 실종경위</span>
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>     
+    
+            
+            <!-- ------------------------------- -->
+            <!-- 본문 종료-->
+            <!-- ------------------------------- -->
+            <!-- footer 시작 -->
+            <footer class="text-white mt-5" id="footer">
+                <div class="container-fluid d-flex justify-content-around">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h3><strong>Info</strong> </h3>
+                        </div>
+                        <div class="widget-body">
+                            <ul>
+                                <li>이용약관</li>
+                                <li>상호명 : </li>
+                                <li>주소 : </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h3><strong>Contact Us</strong> </h3>
+                        </div>
+                        <div class="widget-body">
+                            <ul>
+                                <li>문의전화</li>
+                                <li>080-1234-4567</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h3><strong>Follow Us</strong> </h3>
+ 
+ 
+                        </div>
+                        <div class="widget-body">
+                            <ul>
+                                <li>페이스북</li>
+                                <li>인스타</li>
+                                <li>트위터</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
+            </footer>
+            <!-- footer 종료 -->
+        </div>
+
+        <!--스크립트 적용 -->
+        <script src="js/main.js"></script>
+        <!-- 부트스트랩 스크립트 적용 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
