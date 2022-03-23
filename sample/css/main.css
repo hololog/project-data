@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-#navbarNav {
-    /* position: relative; */
-    /* left: auto; */
-}
-div {
-    /* border: 1px solid darkgreen; */
-}
-
 /* 슬라이드 최대크기 설정 */
 .carousel-item {
     max-height: 40rem;
@@ -59,7 +51,7 @@ div {
     background: url("https://cdn.pixabay.com/photo/2021/05/09/06/07/dog-6240043_960_720.jpg");
     height: 400px;
     /* background-position: center; */
-    background-size: contain;
+    background-size: cover;
     /* background-repeat: no-repeat; */
 }
 .campaign-text {
