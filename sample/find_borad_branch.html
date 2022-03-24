@@ -8,12 +8,18 @@
     <!-- css스타일 적용 -->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/bootstrap/scss/forms/_form-control.scss">
+    <link rel="stylesheet" href="css/bootstrap/scss/forms/_form-control.scss">
+    <link rel="stylesheet" href="css/bootstrap/scss/forms/_floating-labels.scss">
+    <link rel="stylesheet" href="css/main.scss">
+
+    <link rel="stylesheet" href="css/main.scss"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/bootstrap-rtl.css"/>
-    <!-- 부트스트랩 적용 -->
+<!--     부트스트랩 적용-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- 부트스트랩 아이콘 -->
+<!--     부트스트랩 아이콘-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-grid.rtl.css">
@@ -21,6 +27,17 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.rtl.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.rtl.css">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+
+
+
 </head>
 <body class="bg-light">
 <div>
@@ -71,9 +88,9 @@
             <h1>상세확인</h1>
         </div>
         <!-- 신고글쓰기버튼 -->
-        <div class="row p-3">
-            <div class="col-12"><a href="#" class="btn float-end" style="border-color: #3f51b5;">실종신고</a></div>
-        </div>
+        <!--        <div class="row p-3">-->
+        <!--            <div class="col-12"><a href="#" class="btn float-end" style="border-color: #3f51b5;">실종신고</a></div>-->
+        <!--        </div>-->
         <!-- 메인 -->
 
         <section id="slider" class="carousel slide" data-bs-ride="carousel">
@@ -87,17 +104,17 @@
                 <div class="carousel-item">
                     <img src="img/dog3.jpg" alt="second slide" class="d-block w-100">
                     <!-- 글삽입 -->
-                    <div class="carousel-caption">
-                        <p>설명글</p>
-                    </div>
+                    <!--                    <div class="carousel-caption">-->
+                    <!--                        <p>설명글</p>-->
+                    <!--                    </div>-->
                 </div>
                 <!-- 사진3 -->
                 <div class="carousel-item">
                     <img src="img/dog5.jpg" alt="third slide" class="d-block w-100">
                     <!-- 버튼삽입 -->
-                    <div class="carousel-caption">
-                        <a class="btn btn-lg btn-primary" href="#">버튼</a>
-                    </div>
+                    <!--                    <div class="carousel-caption">-->
+                    <!--                        <a class="btn btn-lg btn-primary" href="#">버튼</a>-->
+                    <!--                    </div>-->
                 </div>
             </div>
             <br>
@@ -114,6 +131,7 @@
             <div style="text-align: right; margin-bottom: 20px;">
                 <a class="btn" style="border-color: #3f51b5">수정</a>
                 <a class="btn" style="border-color: #3f51b5">삭제</a>
+                <a class="btn" style="border-color: #3f51b5">목록</a>
             </div>
 
 
@@ -143,22 +161,30 @@
                     <!-- 간략히보기 시작 5개씩  -->
                     <div class="row">
                         <div class="col-md-12 col-xl-8" style="margin-top: 10px;">
-                              <ul>
-                                  <li>
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum leo risus,
-                                      nec efficitur ipsum congue sed. Cras congue aliquet purus, in mattis nunc varius sed.
-                                      Suspendisse augue risus, porta in lectus eu, facilisis gravida eros. Nulla efficitur
-                                      purus quis convallis maximus. In tempor lacinia dolor a malesuada. Quisque magna mauris,
-                                      lobortis non urna nec, rutrum accumsan massa. Praesent sapien mauris, dictum id ultricies quis, vulputate at quam.
-                                      Integer eu iaculis urna, id imperdiet sapien. Vivamus dolor purus, tincidunt non volutpat sed,
-                                      maximus ullamcorper augue. Aliquam et consectetur justo, non ornare diam. Proin quis urna erat.
-                                      Mauris sodales, diam sed maximus cursus, justo enim rhoncus ipsum, sit amet ultrices libero lorem sed odio.
-                                      Ut nec sem fermentum, posuere lectus a, tincidunt enim. Donec elementum nisl vel nibh rhoncus eleifend. Aliquam ut auctor diam.
-                                      Quisque in mauris pulvinar, iaculis magna vel, imperdiet lectus. Nam eu porttitor erat. Curabitur et euismod risus, a rhoncus libero.
-                                      Curabitur blandit accumsan tortor a scelerisque.
-                                  </li>
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum leo risus,
+                                    nec efficitur ipsum congue sed. Cras congue aliquet purus, in mattis nunc varius
+                                    sed.
+                                    Suspendisse augue risus, porta in lectus eu, facilisis gravida eros. Nulla efficitur
+                                    purus quis convallis maximus. In tempor lacinia dolor a malesuada. Quisque magna
+                                    mauris,
+                                    lobortis non urna nec, rutrum accumsan massa. Praesent sapien mauris, dictum id
+                                    ultricies quis, vulputate at quam.
+                                    Integer eu iaculis urna, id imperdiet sapien. Vivamus dolor purus, tincidunt non
+                                    volutpat sed,
+                                    maximus ullamcorper augue. Aliquam et consectetur justo, non ornare diam. Proin quis
+                                    urna erat.
+                                    Mauris sodales, diam sed maximus cursus, justo enim rhoncus ipsum, sit amet ultrices
+                                    libero lorem sed odio.
+                                    Ut nec sem fermentum, posuere lectus a, tincidunt enim. Donec elementum nisl vel
+                                    nibh rhoncus eleifend. Aliquam ut auctor diam.
+                                    Quisque in mauris pulvinar, iaculis magna vel, imperdiet lectus. Nam eu porttitor
+                                    erat. Curabitur et euismod risus, a rhoncus libero.
+                                    Curabitur blandit accumsan tortor a scelerisque.
+                                </li>
 
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                     <!--                        <div class="row">-->
@@ -200,6 +226,68 @@
                     <!--                    </div>-->
                     <!--                </div>-->
                 </div>
+                <!--                <div id="form-commentInfo-kj">-->
+                <!--                    <div id="comment-count-kj">댓글 <span id="count-kj">0</span></div>-->
+                <!--                    <input id="comment-input-kj" placeholder="댓글을 입력해 주세요.">-->
+                <!--                    <button id="submit-kj">등록</button>-->
+                <!--                </div>-->
+                <!--                <div id=comments-kj></div>-->
+
+                <section class="mb-7">
+                    <div class="card bg-light" style="box-shadow: 2px 2px 2px 2px blueviolet;">
+                        <div class="card-body">
+                            <!-- Comment form-->
+<!--                            <form class="mb-4"><textarea class="form-control" rows="3"-->
+<!--                                                         placeholder="댓글을 입력해 주세요!"></textarea>-->
+<!--                            </form>-->
+                            <div class="in-line-kj">
+                                <div id="comment-count" style="margin-bottom: 5px">댓글 <span id="count">4</span></div>
+                                <input type="text" id="name-kj" placeholder="댓글을 입력해 주세요!">&nbsp;&nbsp;
+                                <input type="button" class="btn text-white" style="background-color: blueviolet;" value="등록">
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0"><img class="rounded-circle"
+                                                                src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                                alt="..."></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">익명1</div>
+                                    꼭 찾으셧으면 좋겟어요 ㅠㅠ
+
+                                    <div class="d-flex mt-4">
+                                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                                                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                                        alt="..."></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">익명2</div>
+                                            그러게요 ㅠㅠ
+                                        </div>
+                                    </div>
+                                    <!-- Child comment 2-->
+                                    <div class="d-flex mt-4">
+                                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                                                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                                        alt="..."></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">익명3</div>
+                                            33
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single comment-->
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><img class="rounded-circle"
+                                                                src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                                alt="..."></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">글작성자</div>
+                                    찾았습니다!! 감사합니다!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <div class="container mt-5">
                     <div class="row">
@@ -259,40 +347,41 @@
                                 <h3><strong>Info</strong></h3>
                             </div>
                             <div class="widget-body">
-                                <ul>
-                                    <li>이용약관</li>
-                                    <li>상호명 :</li>
-                                    <li>주소 :</li>
-                                </ul>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li>이용약관</li>
+                                        <li>상호명 :</li>
+                                        <li>주소 :</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="widget">
-                            <div class="widget-header">
-                                <h3><strong>Contact Us</strong></h3>
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <h3><strong>Contact Us</strong></h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li>문의전화</li>
+                                        <li>080-1234-4567</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="widget-body">
-                                <ul>
-                                    <li>문의전화</li>
-                                    <li>080-1234-4567</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <div class="widget">
-                            <div class="widget-header">
-                                <h3><strong>Follow Us</strong></h3>
-                            </div>
-                            <div class="widget-body">
-                                <ul>
-                                    <li>페이스북</li>
-                                    <li>인스타</li>
-                                    <li>트위터</li>
-                                </ul>
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <h3><strong>Follow Us</strong></h3>
+                                </div>
+                                <div class="widget-body">
+                                    <ul>
+                                        <li>페이스북</li>
+                                        <li>인스타</li>
+                                        <li>트위터</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
+                        <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
                 </footer>
                 <!-- footer 종료 -->
             </div>
