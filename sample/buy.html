@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>search_write</title>
+    <title>main</title>
     <!-- css스타일 적용 -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -68,88 +68,27 @@
             <!-- ------------------------------- -->
             <!-- 본문 시작-->
             <!-- ------------------------------- -->
-            <div class="container">
-                    <h1 class="title text-center p-3">찾아요</h1>
-                </div>
-            <div class="container p-5">
-                <form id="search_form" action="get">
-                    <div class="row g-5">
-                        <!--사진 미리보기-->
-                        <div class="col-sm-12 col-md-4 col-lg-6 order-md-last">
-                            <img src="img/dog1.jpg" class="img-thumbnail mb-3" alt="파일미리보기">
-                        </div>
-                        <div class="col-sm-12 col-md-8 col-lg-6">
-                            <!--해결 <-> 미해결 토글버튼 클릭시 글자도 바뀌어야 함-->
-                            <div class="form-check form-switch mb-3" id="switch_eh">
-                                <input class="form-check-input" type="checkbox" role="switch" id="swtich_eh">
-                                <label class="form-check-label" for="switch_eh">미해결</label>
-                            </div>
-                            <div class="input-group mb-3">
-                                <label class="input-group-text" for="animal_sort_eh">동물 종류</label>
-                                    <select class="form-select" id="animal_sort_eh" name="animal_category">
-                                        <option selected>선택해주세요</option>
-                                        <option name="dog" value="0">개</option>
-                                        <option name="cat" value="1">고양이</option>                
-                                        <option name="etc" value="2">기타</option>                
-                                    </select>
-                            </div>       
-                            <div class="input-group mb-3">
-                                <label class="input-group-text"> 동물 이름 </label>
-                                <input type="text" class="form-control" placeholder="이름">
-                            </div>
-                            <div class="input-group mb-3">
-                                <label class="input-group-text"> 동물 나이 </label>
-                                <input type="text" class="form-control" placeholder="숫자만 기입하세요">
-                            </div>
-                            <div class="mb-3"> 동물 성별
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="sex" id="ra1_eh" value="0">
-                                    <label class="form-check-label" for="ra1_eh">암컷</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="sex" id="ra2_eh" value="1">
-                                    <label class="form-check-label" for="ra2_eh">수컷</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="sex" id="ra3_eh" value="2">
-                                    <label class="form-check-label" for="ra3_eh">모름</label>
-                                </div>
-                            </div>
-                            <div class="input-group mb-3">
-                                <label class="input-group-text">실종 지역</label>
-                                    <select class="form-select">
-                                        <option selected>시</option>
-                                        <option value="">부산광역시</option>
-                                        <option value="">서울특별시</option>
-                                        <option value="">광주광역시</option>
-                                    </select>
-                                    <select class="form-select">
-                                        <option selected>구</option>
-                                        <option>수영구</option>
-                                        <option>부산진구</option>
-                                    </select>
-                                    <select class="form-select">
-                                        <option selected>동</option>
-                                        <option>광안동</option>
-                                        <option>망미동</option>
-                                    </select>
-                            </div>
-                            <div class="mb-3">
-                                <input type="file" class="form-control" id="multipleFile_eh">
-                                <label for="multipleFile_eh">*파일첨부는 최대 xx장까지 가능합니다.</label>
-                            </div>
-                            <div class="input-group mb-3">
-                                <label class="input-group-text" for="ta_eh">특징 및 실종경위</label>
-                                <textarea class="form-control" aria-label="With textarea" id="ta_eh"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" id="btn_eh" name="submit"> 
-                                <input type="button" id="btn_eh" name="cancel" value="cancel"> <!--클릭시 메인으로-->
-                            </div>
-                        </div>
+
+            <div class="contrainer p-5">
+                <h1 class="title text-center m-3 p-3">오늘의 공구</h1>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/dog1.jpg" class="img-fluid" alt="공동구매">
+                        <!--progress bar-->
+                        <b>달성현황</b><div class="progress">
+                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                          </div>
                     </div>
-                </form>
+                    <div class="col">
+
+                        상품명
+                        금액
+                        목표인원
+
+                    </div>
+                </div>
             </div>
+
 
             <!-- ------------------------------- -->
             <!-- 본문 종료-->
