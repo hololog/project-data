@@ -17,6 +17,21 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.title_kds {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+    font-weight: bolder;
+
+}
+
+.whole_modal {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .modal-inner {
     position: absolute;
     top: calc(50vh - 190px); left: calc(50vw - 200px);
@@ -87,3 +102,20 @@
     font-size: larger;
     font-weight: bold;
 }
+
+.singin {
+    margin-top: 8px;
+}
+
+#idpw_kds {
+    text-decoration: none;
+}
+
+#nonmem_kds {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
