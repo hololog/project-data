@@ -2,8 +2,8 @@
 -- DB생성
 -- ----------------------------------------------------------------------------------------------------------------
 
-CREATE DATABASE IF NOT EXISTS pet_finder;
-USE pet_finder;
+CREATE DATABASE IF NOT EXISTS mypet;
+USE mypet;
 
 -- ----------------------------------------------------------------------------------------------------------------               
 -- USER테이블 생성
@@ -422,3 +422,5 @@ ALTER TABLE `tip_board_file` ADD CONSTRAINT `PK_TIP_BOARD_FILE` PRIMARY KEY (
 	`board_num`,
 	`board_code`
 );
+
+commit;
