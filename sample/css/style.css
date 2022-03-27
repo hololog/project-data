@@ -1,6 +1,5 @@
 @charset "utf-8";
-* {
-    }
+
 body {
     padding-top: 135px;
 }
@@ -8,7 +7,6 @@ a {
     text-decoration: none !important;
     color: #3f51b5 !important;
 }
-
 #divider {
     color: #3f51b5;
 }
@@ -25,15 +23,11 @@ header > nav {
 .title {
     color: #3f51b5;
 }
-
 /* -------------------------------------------------------------- */
-
 /* find_board */
-
 #find-board {
     /* border: 2px solid #3f51b5; */
     /* box-shadow: 1px 1px 8px #3f51b5; */
-
 }
 #finder-photo {
     box-shadow: 1px 1px 8px #3f51b5;
@@ -42,9 +36,41 @@ header > nav {
     background-color: #3f51b5;
     color: aliceblue;
 }
-
+#find-info-ksk li{
+  list-style: none;
+}
 .float_eh {
     float:right;
 }
+/* 지도 크기 조절 */
+#map-ksk{
+  /* display: none; */
+  width: 100%;
+  height: 790px;
+}
+#map-frame-ksk{
+  position: sticky;
+  top: 133px;
+}
+@media screen and (max-width: 768px){
+  #map-ksk{ 
+    display: none;
+    /* width: 100%;
+    height: 200px;     */
+  }
+}
+@media screen and (max-width: 990px){
+  #map-ksk{ 
+    width: 100%;
+    height: 350px;  
+    padding: 0%;  
+  }
+}  
+@media screen and (max-width: 990px){
+  #map-ksk{ 
+    width: 100%;
+    height: 350px;  
+    padding: 0%;  
+  }
+} 
 
-.
