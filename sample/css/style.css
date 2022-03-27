@@ -1,6 +1,5 @@
 @charset "utf-8";
-* {
-    }
+
 body {
     padding-top: 135px;
 }
@@ -8,7 +7,6 @@ a {
     text-decoration: none !important;
     color: #3f51b5 !important;
 }
-
 #divider {
     color: #3f51b5;
 }
@@ -25,15 +23,11 @@ header > nav {
 .title {
     color: #3f51b5;
 }
-
 /* -------------------------------------------------------------- */
-
 /* find_board */
-
 #find-board {
     /* border: 2px solid #3f51b5; */
     /* box-shadow: 1px 1px 8px #3f51b5; */
-
 }
 #finder-photo {
     box-shadow: 1px 1px 8px #3f51b5;
@@ -42,9 +36,6 @@ header > nav {
     background-color: #3f51b5;
     color: aliceblue;
 }
-
 .float_eh {
     float:right;
 }
-
-.
