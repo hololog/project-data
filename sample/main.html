@@ -13,8 +13,24 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <!-- 부트스트랩 아이콘 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/203a25fbbd.js" crossorigin="anonymous"></script>
+  <!-- JQuery CND -->
+  <script src="js/jquery-3.6.0.js"></script>
+  <!-- Slick CND -->
+  <script src="js/slick.js"></script>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css" />
+
+  <style>
+    #nav-fboard-ksk{
+     /* background-color: #3f51b520; 
+     border-radius: 15%; */
+    }
+  </style>
+
 </head>
 <body class="bg-light">
   <div>
@@ -37,18 +53,25 @@
       </div>
       <!-- 네이게이션바 -->
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+        <div class="container">
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-evenly">
-            <div class="navbar-nav px-5 col-md-12 nav justify-content-around" >
-              <a class="nav-link" href="find_borad.html">실종공고</a>
-              <a class="nav-link" href="#">자유게시판</a>
-              <a class="nav-link" href="#">공동구매</a>
-              <a class="nav-link" href="#">이벤트</a>
-              <a class="nav-link" href="#">ABOUT US</a>
-            </div>
+          <div
+              class="collapse navbar-collapse"
+              id="navbarNav"
+              style="justify-content: space-evenly">
+              <div class="navbar-nav px-5 col-md-12 nav justify-content-around">
+                  <a class="nav-link" id="nav-fboard-ksk" href="find_borad.html">실종공고</a>
+                  <a class="nav-link" id="nav-freeboard-ksk" href="#">자유게시판</a>
+                  <a class="nav-link" id="nav-buy-ksk" href="#">공동구매</a>
+                  <a class="nav-link" id="nav-event-ksk" href="#">이벤트</a>
+                  <a class="nav-link" id="nav-about-ksk" href="main.html#main-about-ksk">ABOUT US</a>
+              </div>
           </div>
         </div>
       </nav>
@@ -143,13 +166,22 @@
           <div class="col">
             <div class="card">
               <img src="img/dog1.jpg" class="card-img-top" alt="..." />
+              <!-- 북마크 아이콘 -->
+              <i class="fa-solid fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgb(245, 211, 22);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 전포동/프렌치불독</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                   <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
+                  </div>
+                  <div>
+                    <!-- 댓글수, 조회수 아이콘 -->
+                    <i class="bi bi-star-fill"></i>  1 
+                    <i class="bi bi-chat-dots"></i> 0
+                    <i class="bi bi-eye-fill"></i>  1 
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -157,39 +189,43 @@
             <div class="card">
               <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top"
                 alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 광안동/견종모름</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                   <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
+                  </div>
+                  <div>
+                    <!-- 댓글수, 조회수 아이콘 -->
+                    <i class="fa-regular fa-star"> 5 </i>
+                    <i class="fa-regular fa-comment-dots"> 1 </i>
+                    <i class="fa-regular fa-eye"> 12 </i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img src="img/dog6.jpg" class="card-img-top" alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 전포동/요크셔테리안</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img src="img/dog1.jpg" class="card-img-top" alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 전포동/프렌치불독</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
               </div>
             </div>
           </div>
@@ -197,64 +233,65 @@
             <div class="card">
               <img src="https://cdn.pixabay.com/photo/2017/11/02/15/20/dog-2911444_960_720.jpg" class="card-img-top"
                 alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 광안동/견종모름</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img src="img/dog6.jpg" class="card-img-top" alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 전포동/요크셔테리안</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img src="img/dog6.jpg" class="card-img-top" alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 전포동/요크셔테리안</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
               <img src="img/dog1.jpg" class="card-img-top" alt="..." />
+              <i class="fa-regular fa-star fa-2x" style="position: absolute; top:10px; left: 10px; color: rgba(245, 212, 22, 0.788);"></i>
               <div class="card-body">
                 <h5 class="card-title">멍멍이 찾습니다.</h5>
                 <p class="card-text">부산 전포동/프렌치불독</p>
-                <a href="#" class="btn text-white" style="background-color: #3f51b5">Go somewhere</a>
-                <button type="button" class="btn text-white" style="background-color: #3f51b5">
-                  좋아요
-                </button>
+                <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
               </div>
             </div>
           </div>
         </div>
+        <div class="d-flex mt-1 justify-content-end">
+          <a href="find_borad.html">더보기</a> 
+        </div>
+        <hr id="divider" />
       </div>
-      <hr id="divider" />
+      
     </section>
     <!-- 갤러리 끝 -->
 
     <!-- 중간 캠페인 시작-->
     <section class="campaign my-5">
-      <h1 class="campaign-text">거리의 동물들에게 관심을 가져주세요</h1>
+      <p class="campaign-text">
+        거리의 <br>
+        동물들에게 <br>  
+        관심을<br> 
+        가져주세요
+      </p>
     </section>
     <!-- 중간 캠페인 종료 -->
 
@@ -278,6 +315,11 @@
             content of a page when looking at its layout. The point of using Lorem Ipsum is
             that it has a more-or-less normal distribution of letters
           </p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 15%; background-color: #3f51b5;" > 20명</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 85%"></div>
+          </div>
+          <br>
           <button type="button" class="btn text-white" style="background-color: #3f51b5">
             구매하러가기
           </button>
@@ -291,7 +333,7 @@
     </div>
 
     <!-- ABOUT US -->
-    <section class="container py-3">
+    <section class="container py-3" id="main-about-ksk">
       <h1 class="title text-end mt-3 p-3">ABOUT US</h1>
       <hr class="d-sm-block" id="divider" />
       <div class="row">
