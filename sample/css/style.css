@@ -15,8 +15,11 @@ a {
     font-weight: bold;
     text-align: center;
 }
-#divider {
-    color: #3f51b5;
+.divider {
+  width:100%;
+  /* margin:0 auto; */
+  margin: 77px auto;
+  background:#3f51b5;
 }
 /* 네비게이션 바 그림자 */
 header > nav {
@@ -30,6 +33,10 @@ header > nav {
 }
 .title {
     color: #3f51b5;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 /* -------------------------------------------------------------- */
 /* find_board */
