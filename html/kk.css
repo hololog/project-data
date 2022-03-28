@@ -14,7 +14,23 @@
         border-radius: 10px 10px 10px 10px;
         background-color: darkgray;}
 .progress-bar{height: 30px;
-    border-radius: 10px 10px 10px 10px;}
+    border-radius: 5px 5px 5px 5px;}
 .aa33{background:-webkit-gradient(radial, -16 0, 0, 220 -257, 465, from(#A483FF), to(#714E28))}
 .bb22{margin-left: 75%;
     margin-bottom: 1%;}
+.aa22{padding: 2%;  
+      background-color: #714E28;
+      position: relative;}
+p{line-height: 0.5cm;}
+.GB1{display: grid;
+    grid-row: 300px 300px;}
+.row{position: relative;
+    background-color: rgb(187, 197, 206);
+    margin-right: 0;
+margin-bottom: 0;}
+.kk11{position: absolute;
+    background-color: rgb(78, 165, 241);
+    height: 94%;
+    width: 98%;
+    z-index: 1;}
+  
