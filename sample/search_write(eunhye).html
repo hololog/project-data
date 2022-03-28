@@ -12,7 +12,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- 부트스트랩 아이콘 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  </head>
+   
+    <!-- 파일 드래그&드롭 관련 라이브러리-->
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        .dn{display:none;}
+        .db{display:block;overflow:hidden}
+        .previewImg{width:110px; height: 110px; margin-left:5px; border: solid 1px;}
+        .imgClass{width: 110px;float:left;margin-right:10px }
+        .imgDelBtn{width: 110px; margin-left: 5px; margin-bottom: 5px;}
+    </style>
+    <!-- 파일 드래그&드롭 관련 라이브러리 끝-->
+    
+    <script>
+        $(function (){
+            fileDropDown();    // 함수 실행
+        });
+
+    function fileDropDown(){
+        
+           var dropZone = $("#dropZone");
+           
+        dropZone.on('dragenter',function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            dropZone.css('background-color','#E3F2FC');
+        });
+        dropZone.on('dragleave',function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            dropZone.css('background-color','#FFFFFF');
+        });
+        dropZone.on('dragover',function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            dropZone.css('background-color','#E3F2FC');
+        }); 
+        dropZone.on('drop',function(e){
+            e.preventDefault();
+            dropZone.css('background-color','#FFFFFF');
+            var files = e.originalEvent.dataTransfer.files;	//fileList객체 (file drop시 생성되는 파일 리스트)
+            
+        });
+      }
+      </script>
+
+</head>
   <body  class="bg-light">
             <!-- header 시작-->
             <header class="fixed-top bg-white">
@@ -84,16 +131,16 @@
 
                     <div class="row g-5">
                         <!--파일 미리보기 img-->
-                        <hr>
+                        <!-- <hr>
                         <div class="col-sm-12 col-md-12 col-lg-6 order-lg-last p-5">
-                            <h6 class="text-center p-3"><i>*반려동물의 사진을 첨부해주세요</i></h6>
+                            <h6 class="text-center p-3"><i>*반려동물의 사진을 첨부해주세요</i></h6> -->
                             <!--첨부 파일 이미지 미리보기. 업로드 전 no image 보여주기-->
-                            <img src="img/dog1.jpg" class="img-thumbnail mb-3" alt="파일미리보기">
+                            <!-- <img src="img/dog1.jpg" class="img-thumbnail mb-3" alt="파일미리보기"> -->
                             <!--다중 파일 첨부-->
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label for="multipleFile_eh">*파일첨부는 최대 xx장까지 가능합니다.</label>
                                 <input type="file" class="form-control mb-3" id="multipleFile_eh" multiple>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6 p-5">
                             <!--해결,미해결 토글버튼 (클릭시 글자도 바뀌어야 함)-->
@@ -180,11 +227,26 @@
                                 <input type="text" class="form-control" placeholder="OO초등학교 인근">
                             </div>
                             <!--기타 특징-->
-                            <div class="input-group mb-5">
+                            <div class="input-group mb-3">
                                 <label class="input-group-text" for="ta_eh">기타 특징</label>
                                 <textarea rows="4" class="form-control" aria-label="With textarea" id="ta_eh"
                                 placeholder="중성화 유무, 자주가는 산책길, 좋아하는 음식 등 동물에 대한 상세정보"></textarea>
                             </div>
+                            <!--연락가능 수단-->
+                            <div class="input-group mb-3">
+                                <label class="input-group-text">연락 가능 수단</label>
+                                <input type="text" class="form-control" placeholder="전화번호, 이메일, 카카오톡 아이디 등">
+                            </div>
+                            <!--file 드래그앤드롭-->
+                            <div class="dropzone mb-5" id="dropZone">
+                                <div id="uploadDiv" class="dz-default dz-message db">
+                                    파일을 끌어 올려 업로드 해주세요.<br> 
+                                </div>
+                                <div id="imgDiv" class="dn"></div>
+                                <small style="color: gray; font-size: 13px;">업로드 가능 이미지 확장자 ( gif, jpeg, jpg, png, bmp )</small>
+                            </div>
+                          
+                        
                             <!--submit 버튼-->
                             <div class="text-center p-2">
                                 <input type="submit" id="btn_eh" name="submit"> 
