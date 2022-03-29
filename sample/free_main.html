@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css스타일 적용 -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- 부트스트랩 적용 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- 부트스트랩 아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <title>자유게시판 상세 페이지</title>
+
+    
+    
+  </head>
+  <body  class="bg-light">
+    <div>
+        <!-- header 시작 -->
+        <header class="fixed-top bg-white">
+            <!-- 로고 + 로그인/회원가입 버튼 -->
+            <div class="row py-3 mx-3">
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <h1>
+                       <a href="main.html"><i class="bi bi-emoji-smile" style="color: #3f51b5;">Logo</i></a> 
+                    </h1>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center flex-wrap gap-2">
+                    <a class="p-1 btn" style="color: #3f51b5;" href="#">LOGIN</a>
+                    <a class="p-1 btn" style="color: #3f51b5;" href="#">SIGN UP</a>
+                </div>
+            </div>
+            <!-- 네이게이션바 -->
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                           
+                            <div class="navbar-nav px-5 col-md-12 nav justify-content-around ">
+
+                            
+                                <a class="nav-link" href="find_borad.html">실종공고</a>
+                                <a class="nav-link" href="free_jau.html">자유게시판</a>
+                                <a class="nav-link" href="#">공동구매</a>
+                                <a class="nav-link" href="#">이벤트</a>
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            
+        </header>
+        <br>
+        <br>
+        <!-- header 끝 -->
+
+        <!-- 상세페이지 -->
+        
+            <!-- ------------------------------- -->
+        <!-- 본문 시작-->
+        <!-- ------------------------------- -->
+
+       <!-- 제목 시작 -->
+       <div class="container">
+            <h1 class="sub-title">상세페이지</h1>
+            <hr>
+        </div>
+     <!-- 제목 종료 -->
+            
+           
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 댓글시작 -->
+       <section class="mb-7">
+            <div class="card bg-light" style="margin-top: 30px">
+                <div class="container ">
+                    <!-- Comment form-->
+                    <!--                            <form class="mb-4"><textarea class="form-control" rows="3"-->
+                    <!--                                                         placeholder="댓글을 입력해 주세요!"></textarea>-->
+                    <!--                            </form>-->
+                    <div id="comment-count" class="text-center" style="margin-bottom: 5px ">댓글 <span id="count">4</span></div>
+                    <div class="d-flex align-items-center justify-content-center ">
+                        
+                        <br>
+                        <input type="text" id="name-kj" class="form-control w-50" placeholder="댓글을 입력해 주세요!">&nbsp;&nbsp;
+                        <button id="searchBtn"  class=" flex-shrink-0 btn btn-outline-primary">등록</button>
+                    </div>
+                    <!--
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                    </div>
+                    -->
+
+                    <div class="d-flex mb-4 justify-content-start">
+                        <div class="flex-shrink-6"><img class="rounded-circle"
+                                                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                        alt="..."></div>
+                        <div class="ms-3">
+                            <div class="fw-bold">익명1</div>
+                            꼭 찾으셧으면 좋겟어요 ㅠㅠ
+
+                            <div class="d-flex mt-4">
+                                <div class="flex-shrink-0"><img class="rounded-circle"
+                                                                src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                                alt="..."></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">익명2</div>
+                                    그러게요 ㅠㅠ
+                                </div>
+                            </div>
+                            <!-- Child comment 2-->
+                            <div class="d-flex mt-4">
+                                <div class="flex-shrink-0"><img class="rounded-circle"
+                                                                src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                                alt="..."></div>
+                                <div class="ms-3">
+                                    <div class="fw-bold">익명3</div>
+                                    33
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single comment-->
+                    <div class="d-flex justify-content-center">
+                        <div class="flex-shrink-0"><img class="rounded-circle"
+                                                        src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                                                        alt="..."></div>
+                        <div class="ms-3">
+                            <div class="fw-bold">글작성자</div>
+                            찾았습니다!! 감사합니다!!
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+              
+        <!-- 상세페이지 종료 -->
+
+        <!-- footer 시작 -->
+        <footer class="text-white mt-5" id="footer">
+          <div class="container-fluid d-flex justify-content-around">
+              <div class="widget">
+                  <div class="widget-header">
+                      <h3><strong>Info</strong> </h3>
+                  </div>
+                  <div class="widget-body">
+                      <ul>
+                          <li>이용약관</li>
+                          <li>상호명 : </li>
+                          <li>주소 : </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="widget">
+                  <div class="widget-header">
+                      <h3><strong>Contact Us</strong> </h3>
+                  </div>
+                  <div class="widget-body">
+                      <ul>
+                          <li>문의전화</li>
+                          <li>080-1234-4567</li>
+                          <li></li>
+                      </ul>
+                  </div>
+              </div>
+              
+              <div class="widget">
+                  <div class="widget-header">
+                      <h3><strong>Follow Us</strong> </h3>
+                  </div>
+                  <div class="widget-body">
+                      <ul>
+                          <li>페이스북</li>
+                          <li>인스타</li>
+                          <li>트위터</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
+      </footer>
+      <!-- footer 종료 -->
+  </div>
+
+  <!--스크립트 적용 -->
+  <script src="js/main.js"></script>
+   <!-- 스크립트5버전 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
+
