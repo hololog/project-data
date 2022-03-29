@@ -4,7 +4,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: ;
     width: 100%;
     height: 100vh;
 }
@@ -18,12 +17,28 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.title_kds {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+    font-weight: bolder;
+
+}
+
+.whole_modal {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .modal-inner {
-    position: fixed;
+    position: absolute;
+    top: calc(50vh - 190px); left: calc(50vw - 200px);
     border-radius: 8px;
-    padding: 5%;    
-    top: 20%;
-    left: 33%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     text-align: center;
     background-color: ghostwhite;
@@ -82,3 +97,25 @@
     margin-top: 8px;
     padding: 8px;
 }
+
+.sns_join {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.singin {
+    margin-top: 8px;
+}
+
+#idpw_kds {
+    text-decoration: none;
+}
+
+#nonmem_kds {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
