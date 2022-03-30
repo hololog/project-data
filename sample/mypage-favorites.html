@@ -48,52 +48,54 @@
         <link rel="stylesheet" href="css/style-jd.css">
         <script src="js/sidebars.js"></script>
         <link rel="stylesheet" href="css/sidebars.css">
+
     </head>
     <body class="bg-light">
-
-        <!-- header 시작 -->
-        <header class="fixed-top bg-white">
-            <!-- 로고 + 로그인/회원가입 버튼 -->
-            <div class="row py-3 mx-3">
-                <div class="col-4"></div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
-                    <h1>
-                        <a href="main.html">
-                            <i class="bi bi-emoji-smile" style="color: #3f51b5;">Logo</i>
-                        </a>
-                    </h1>
-                </div>
-                <div
-                    class="col-4 d-flex justify-content-end align-items-center flex-wrap gap-2">
-                    <a class="p-1 btn" style="color: #3f51b5;" href="#">LOGIN</a>
-                    <a class="p-1 btn" style="color: #3f51b5;" href="#">SIGN UP</a>
-                </div>
-            </div>
-            <!-- 네이게이션바 -->
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
-                <div class="container-fluid">
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-
-                        <div class="navbar-nav px-5 col-md-12 nav justify-content-around ">
-
-                            <a class="nav-link" href="find_borad.html">실종공고</a>
-                            <a class="nav-link" href="free_jau.html">자유게시판</a>
-                            <a class="nav-link" href="#">공동구매</a>
-                            <a class="nav-link" href="#">이벤트</a>
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </div>
+        <div>
+            <!-- header 시작 -->
+            <header class="fixed-top bg-white">
+                <!-- 로고 + 로그인/회원가입 버튼 -->
+                <div class="row py-3 mx-3">
+                    <div class="col-4"></div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <h1>
+                            <a href="main.html">
+                                <i class="bi bi-emoji-smile" style="color: #3f51b5;">Logo</i>
+                            </a>
+                        </h1>
+                    </div>
+                    <div
+                        class="col-4 d-flex justify-content-end align-items-center flex-wrap gap-2">
+                        <a class="p-1 btn" style="color: #3f51b5;" href="#">LOGIN</a>
+                        <a class="p-1 btn" style="color: #3f51b5;" href="#">SIGN UP</a>
                     </div>
                 </div>
-            </nav>
+                <!-- 네이게이션바 -->
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                    <div class="container-fluid">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
 
-        </header>
+                            <div class="navbar-nav px-5 col-md-12 nav justify-content-around ">
+
+                                <a class="nav-link" href="find_borad.html">실종공고</a>
+                                <a class="nav-link" href="free_jau.html">자유게시판</a>
+                                <a class="nav-link" href="#">공동구매</a>
+                                <a class="nav-link" href="#">이벤트</a>
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        
 
         <!-- header 끝 -->
 
@@ -108,52 +110,28 @@
 
         <!-- 본문시작 -->
 
-        <!-- 사이드바 -->
-        <div class="row" style="padding-left: 10%; padding-right: 10%;">
-            <div class="d-flex flex-column flex-shrink-0 p-3 col-md-2 menu-jd">
-                <div class="dropdown" style="display: flex; justify-content: center">
-                    <a
-                        href="#"
-                        class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                        id="dropdownUser1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
+        <!-- 사이드바 시작 -->
+        <div class="row" style="padding-left: 15%; padding-right: 15%; column-gap: 25px;">
+            <div
+                class="d-flex flex-column flex-shrink-0 p-4 col-md-2 menu-jd"
+                style="min-width: 230px;">
+                <div class="Info" style="display: flex;">
                         <img
                             src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg"
                             alt=""
-                            width="50"
-                            height="50"
-                            class="rounded-circle me-2">
-                        <strong>JunDong 님</strong>
-                    </a>
-                    <ul
-                        class="dropdown-menu dropdown-menu-dark text-small shadow"
-                        aria-labelledby="dropdownUser1">
-                        <li>
-                            <a class="dropdown-item" href="#">New project...</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Profile</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">로그아웃</a>
-                        </li>
-                    </ul>
+                            width="70"
+                            height="70"
+                            class="rounded-circle me-3 align-items-center">
+                        <strong style="color: white;"><br>JunDong 님</strong>
                 </div>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
+                    <li class="nav-item2">  
+                        <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16">
                                 <use href="#"/>
                             </svg>
-                            홈
+                            내정보 변경
                         </a>
                     </li>
                     <li>
@@ -161,9 +139,10 @@
                             <svg class="bi me-2" width="16" height="16">
                                 <use href="#"/>
                             </svg>
-                            내정보
+                            내 글목록
                         </a>
                     </li>
+                    
                     <li>
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16">
@@ -177,7 +156,7 @@
                             <svg class="bi me-2" width="16" height="16">
                                 <use href="#"/>
                             </svg>
-                            Orders
+                            비밀번호 변경
                         </a>
                     </li>
                     <li>
@@ -195,7 +174,7 @@
             <!-- 즐겨찾기 시작 -->
             <div
                 class="border col"
-                style=" padding-left: 8%; padding-top: 2%; padding-bottom: 2%;">
+                style=" padding-left: 8%; padding-top: 4%; padding-bottom: 4%;">
                 <div class="row gap-5">
                     <div class="card col-md-5 gap-2">
                         <img src="img/dog1.jpg" class="card-img-top" alt="..."/>
