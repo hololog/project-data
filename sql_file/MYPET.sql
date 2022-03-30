@@ -2,8 +2,8 @@
 -- DB생성
 -- ----------------------------------------------------------------------------------------------------------------
 
-CREATE DATABASE IF NOT EXISTS pet_finder;
-USE pet_finder;
+CREATE DATABASE IF NOT EXISTS MYPET;
+USE MYPET;
 
 -- ----------------------------------------------------------------------------------------------------------------               
 -- USER테이블 생성
@@ -50,16 +50,23 @@ CREATE TABLE `find_board` (
 	`pet_age`	int	NULL	COMMENT 'nvl',
 	`pet_gender`	char(1)	NOT NULL	COMMENT '0암1수2모름',
 	`address`	varchar(30)	NOT NULL,
-	`detail_address`	varchar(30)	NOT NULL,
+	`address2`	varchar(30)	NOT NULL,
 	`status`	char(1)	NOT NULL	COMMENT '0해결1미해결',
 	`insert_date`	datetime	NOT NULL	COMMENT '자동 등록',
-	`delete_date`	datetime	NULL
+	`delete_date`	datetime	NULL,
+	`detail_address`	varchar(30)	NULL	COMMENT '상세위치',
+	`reward`	int	NULL	COMMENT '사례금'
 );
 
 ALTER TABLE `find_board` ADD CONSTRAINT `PK_FIND_BOARD` PRIMARY KEY (
 	`find_board_num`,
-	`board_code`
+	`board_code`,
+	`nickname`
 );
+
+
+
+
 
 -- ----------------------------------------------------------------------------------------------------------------               
 -- find_board_file 테이블 생성
@@ -422,3 +429,5 @@ ALTER TABLE `tip_board_file` ADD CONSTRAINT `PK_TIP_BOARD_FILE` PRIMARY KEY (
 	`board_num`,
 	`board_code`
 );
+
+commit;

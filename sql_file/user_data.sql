@@ -1,4 +1,4 @@
-use pet_finder;
+use MYPET;
 truncate table user;
 
 insert into user (user_id, email, password, nickname, name, phone_no, zipcode, address, detail_address, signup_date) values (1, 'hfanstone0@ask.com', '7PgjTlvUl', 'jfanstone0', 'Fanstone', '467-238-1039', 22900, '286 Barby Crossing', 380, '2021-03-18');
@@ -101,3 +101,5 @@ insert into user (user_id, email, password, nickname, name, phone_no, zipcode, a
 insert into user (user_id, email, password, nickname, name, phone_no, zipcode, address, detail_address, signup_date) values (98, 'itrevethan2p@google.co.uk', 'ftBdS337ol', 'htrevethan2p', 'Trevethan', '220-272-9296', 92075, '3839 Ronald Regan Way', 827, '2021-11-11');
 insert into user (user_id, email, password, nickname, name, phone_no, zipcode, address, detail_address, signup_date) values (99, 'mbulcroft2q@usgs.gov', 'eqKSD9Vrn5M', 'kbulcroft2q', 'Bulcroft', '137-510-3263', 27435, '58779 Northfield Avenue', 109, '2021-05-23');
 insert into user (user_id, email, password, nickname, name, phone_no, zipcode, address, detail_address, signup_date) values (100, 'cfilchakov2r@example.com', 'SPvVhDV', 'afilchakov2r', 'Filchakov', '794-547-5735', 17008, '7840 Stang Street', 936, '2021-08-19');
+
+commit;

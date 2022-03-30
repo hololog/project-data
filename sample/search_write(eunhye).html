@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>main</title>
+    <title>search_write</title>
     <!-- css스타일 적용 -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -68,24 +68,53 @@
             <!-- ------------------------------- -->
             <!-- 본문 시작-->
             <!-- ------------------------------- -->
-            <div class="contrainer p-2">
-                <div class="row">
-                    <p class="col-12 float_eh">작성일 : 2022-03-24</p>
-                </div>
+            <!-- 제목 시작 -->
+            <div class="container">
+              <h1 class="sub-title">실종공고</h1>
+              <hr>
             </div>
-            <div class="container p-5">
-                <form id="search_form" action="get">
-                    <div class="row">
-                        <!--사진 미리보기-->
-                        <div class="col-sm-12 col-md-4 col-lg-6">
+            <!-- 제목 종료 -->
+            <!-- <div class="container p-5">
+                    <h1 class="title text-center p-3"><b>실종공고</b></h1> -->
+                    <!-- <h6 class="text-center">실종 동물의 정보를 입력해 주세요</h6> -->
+            <!-- </div> -->
+            
+            <div class="container p-2">
+                <!--파일첨부 포함된 form 태그이므로 enctype=multipart/form-data -->
+                <form action="" method="post" enctype="multipart/form-data">
+
+                    <!--작성자 닉네임 가져오기.....필요한가?-->
+                    <input type="hidden" value="" name="nickname">
+                    <!--작성 date 가져오기 timestamp-->
+                    <input type="hidden" value="date">
+
+                    <div class="row g-5">
+                        <!--파일 미리보기 img-->
+                        <!-- <hr> -->
+                        <div class="col-sm-12 col-md-12 col-lg-6 order-lg-last p-5">
+                            <h6 class="text-center p-3"><i>*반려동물의 사진을 첨부해주세요</i></h6>
+                            <!--첨부 파일 이미지 미리보기. 업로드 전 no image 보여주기-->
                             <img src="img/dog1.jpg" class="img-thumbnail mb-3" alt="파일미리보기">
-                        </div>
-                        <div class="col-sm-12 col-md-8 col-lg-6">
-                            <!--해결 <-> 미해결 토글버튼 클릭시 글자도 바뀌어야 함-->
-                            <div class="form-check form-switch mb-3" id="switch_eh">
-                                <input class="form-check-input" type="checkbox" role="switch" id="swtich_eh">
-                                <label class="form-check-label" for="switch_eh">미해결</label>
+                            <!--다중 파일 첨부-->
+                            <div class="mb-3">
+                                <label for="multipleFile_eh">*파일첨부는 최대 xx장까지 가능합니다.</label>
+                                <input type="file" class="form-control mb-3" id="multipleFile_eh" multiple>
                             </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 p-5">
+                            <!--해결,미해결 토글버튼 (클릭시 글자도 바뀌어야 함)-->
+                            <div class="row">
+                                <div class="col form-check form-switch mb-3" id="switch_eh">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="swtich_eh">
+                                    <label class="form-check-label" for="switch_eh">미해결</label>
+                                </div>
+                            <!--사례금 유무-->
+                                <div class="col input-group mb-3">
+                                    <label class="input-group-text">사례금</label>
+                                    <input type="text" class="form-control" placeholder="만원">
+                                </div>
+                            </div>
+                            <!--동물 종류 select -->
                             <div class="input-group mb-3">
                                 <label class="input-group-text" for="animal_sort_eh">동물 종류</label>
                                     <select class="form-select" id="animal_sort_eh" name="animal_category">
@@ -94,30 +123,45 @@
                                         <option name="cat" value="1">고양이</option>                
                                         <option name="etc" value="2">기타</option>                
                                     </select>
-                            </div>       
+                            </div>
+                            <!--동물 이름, 동물 나이 text-->  
                             <div class="input-group mb-3">
                                 <label class="input-group-text"> 동물 이름 </label>
-                                <input type="text" class="form-control" placeholder="숫자만 기입하세요">
+                                <input type="text" class="form-control" placeholder="이름">
                             </div>
                             <div class="input-group mb-3">
                                 <label class="input-group-text"> 동물 나이 </label>
-                                <input type="text" class="form-control" placeholder="숫자만 기입하세요">
+                                <input type="text" class="form-control" placeholder="숫자만 입력">
+                                <select class="form-select">
+                                    <option>개월</option>
+                                    <option>년(세)</option>
+                                </select>
                             </div>
-                            <div class="mb-3"> 동물 성별
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="sex" id="ra1_eh" value="0">
-                                    <label class="form-check-label" for="ra1_eh">암컷</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="sex" id="ra2_eh" value="1">
-                                    <label class="form-check-label" for="ra2_eh">수컷</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="sex" id="ra3_eh" value="2">
-                                    <label class="form-check-label" for="ra3_eh">모름</label>
+                            <!--동물 성별 체크 radio-->
+                            <div class="input-group mb-3"> 
+                                <div class="input-group-text">동물 성별</div>
+                                <div class="form-control">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="ra1_eh" value="0">
+                                        <label class="form-check-label" for="ra1_eh">암컷</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="ra2_eh" value="1">
+                                        <label class="form-check-label" for="ra2_eh">수컷</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sex" id="ra3_eh" value="2">
+                                        <label class="form-check-label" for="ra3_eh">모름</label>
+                                    </div>
                                 </div>
                             </div>
+                            <!--실종날짜-->
                             <div class="input-group mb-3">
+                                <label class="input-group-text">실종 날짜</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <!--실종지역 select (JQuery or API 적용 예정)-->
+                            <div class="input-group">
                                 <label class="input-group-text">실종 지역</label>
                                     <select class="form-select">
                                         <option selected>시</option>
@@ -136,15 +180,19 @@
                                         <option>망미동</option>
                                     </select>
                             </div>
-                            <div class="mb-3">
-                                <input type="file" class="form-control" id="multipleFile_eh">
-                                <label for="multipleFile_eh">*파일첨부는 최대 xx장까지 가능합니다.</label>
-                            </div>
+                            <!--실종지역 상세 위치-->
                             <div class="input-group mb-3">
-                                <label class="input-group-text" for="ta_eh">특징 및 실종경위</label>
-                                <textarea class="form-control" aria-label="With textarea" id="ta_eh"></textarea>
+                                <label class="input-group-text">상세 위치</label>
+                                <input type="text" class="form-control" placeholder="OO초등학교 인근">
                             </div>
-                            <div>
+                            <!--기타 특징-->
+                            <div class="input-group mb-5">
+                                <label class="input-group-text" for="ta_eh">기타 특징</label>
+                                <textarea rows="4" class="form-control" aria-label="With textarea" id="ta_eh"
+                                placeholder="중성화 유무, 자주가는 산책길, 좋아하는 음식 등 동물에 대한 상세정보"></textarea>
+                            </div>
+                            <!--submit 버튼-->
+                            <div class="text-center p-2">
                                 <input type="submit" id="btn_eh" name="submit"> 
                                 <input type="button" id="btn_eh" name="cancel" value="cancel"> <!--클릭시 메인으로-->
                             </div>
@@ -152,7 +200,6 @@
                     </div>
                 </form>
             </div>
-
             <!-- ------------------------------- -->
             <!-- 본문 종료-->
             <!-- ------------------------------- -->
