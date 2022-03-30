@@ -93,8 +93,8 @@
                         </div>
                     </div>
                 </nav>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <!-- header 끝 -->
 
@@ -109,52 +109,28 @@
 
         <!-- 본문시작 -->
 
-        <!-- 사이드바 -->
-        <div class="row" style="padding-left: 15%; padding-right: 15%;">
-            <div class="d-flex flex-column flex-shrink-0 p-3 col-md-2 menu-jd" style="min-width: 230px;">
-                <div class="dropdown" style="display: flex; justify-content: center">
-                    <a
-                        href="#"
-                        class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                        id="dropdownUser1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
+        <!-- 사이드바 시작 -->
+        <div class="row" style="padding-left: 15%; padding-right: 15%; column-gap: 25px;">
+            <div
+                class="d-flex flex-column flex-shrink-0 p-4 col-md-2 menu-jd"
+                style="min-width: 230px;">
+                <div class="Info" style="display: flex;">
                         <img
                             src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg"
                             alt=""
-                            width="50"
-                            height="50"
-                            class="rounded-circle me-2">
-                        <strong>JunDong 님</strong>
-                    </a>
-                    <ul
-                        class="dropdown-menu dropdown-menu-dark text-small shadow"
-                        aria-labelledby="dropdownUser1">
-                        <li>
-                            <a class="dropdown-item" href="#">New project...</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Settings</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Profile</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">로그아웃</a>
-                        </li>
-                    </ul>
+                            width="70"
+                            height="70"
+                            class="rounded-circle me-3 align-items-center">
+                        <strong style="color: white;"><br>JunDong 님</strong>
                 </div>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
+                    <li class="nav-item2">  
+                        <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16">
                                 <use href="#"/>
                             </svg>
-                            홈
+                            내정보 변경
                         </a>
                     </li>
                     <li>
@@ -162,9 +138,10 @@
                             <svg class="bi me-2" width="16" height="16">
                                 <use href="#"/>
                             </svg>
-                            내정보
+                            내 글목록
                         </a>
                     </li>
+                    
                     <li>
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16">
@@ -195,15 +172,14 @@
 
             <!-- 게시판 시작 -->
             <div class=" border col" style="padding: 3%;">
-                <!-- <div class="container mt-3 border"> -->
                 <div class="content">
-                    <table class="table table-hover text-center">
+                    <table class="table table-hover text-start">
                         <thead>
-                            <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성일</th>
-                                <th>댓글수</th>
+                            <tr style="text-align: center;">
+                                <th width="7%">번호</th>
+                                <th width="65%">제목</th>
+                                <th width="11%">작성일</th>
+                                <th width="9%">댓글수</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -211,7 +187,7 @@
                                 <td>1</td>
                                 <td>치와와</td>
                                 <td>2022.03.22</td>
-                                <td></td>
+                                <td>123</td>
                             </tr>
 
                             <tr>
@@ -252,71 +228,70 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- 게시판 끝 -->
+        <!-- 게시판 끝 -->
 
-    <!-- 본문 끝 -->
+        <!-- 본문 끝 -->
 
-    <!-- footer 시작 -->
-    <footer class="text-white mt-5" id="footer">
-        <div class="container-fluid d-flex justify-content-around">
-            <div class="widget">
-                <div class="widget-header">
-                    <h3>
-                        <strong>Info</strong>
-                    </h3>
+        <!-- footer 시작 -->
+        <footer class="text-white mt-5" id="footer">
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>
+                            <strong>Info</strong>
+                        </h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul>
+                            <li>이용약관</li>
+                            <li>상호명 :</li>
+                            <li>주소 :</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="widget-body">
-                    <ul>
-                        <li>이용약관</li>
-                        <li>상호명 :</li>
-                        <li>주소 :</li>
-                    </ul>
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>
+                            <strong>Contact Us</strong>
+                        </h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul>
+                            <li>문의전화</li>
+                            <li>080-1234-4567</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>
+                            <strong>Follow Us</strong>
+                        </h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul>
+                            <li>페이스북</li>
+                            <li>인스타</li>
+                            <li>트위터</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="widget">
-                <div class="widget-header">
-                    <h3>
-                        <strong>Contact Us</strong>
-                    </h3>
-                </div>
-                <div class="widget-body">
-                    <ul>
-                        <li>문의전화</li>
-                        <li>080-1234-4567</li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="widget">
-                <div class="widget-header">
-                    <h3>
-                        <strong>Follow Us</strong>
-                    </h3>
-                </div>
-                <div class="widget-body">
-                    <ul>
-                        <li>페이스북</li>
-                        <li>인스타</li>
-                        <li>트위터</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
-    </footer>
-    <!-- footer 종료 -->
+            <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
+        </footer>
+        <!-- footer 종료 -->
 
-    <!--스크립트 적용 -->
-    <script src="js/main.js"></script>
-    <!-- 부트스트랩 스크립트 적용 -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <!--스크립트 적용 -->
+        <script src="js/main.js"></script>
+        <!-- 부트스트랩 스크립트 적용 -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="sidebars.js"></script>
+        <script src="sidebars.js"></script>
 
-</body>
+    </body>
 </html>
