@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta
+            name="author"
+            content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.88.1">
+
         <!-- css스타일 적용 -->
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/main.css"/>
@@ -17,78 +23,32 @@
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-            
-        <title>mypage</title>
 
-        <style type="text/css">
-             .ul {
-                /* text-align: left;
-                border: 3px solid rgb(185, 157, 247);
-                list-style-type: none;
-                font-size: 120%;
-                font-style: oblique;
-                line-height: 220%;
-                margin-top: 6em;
-                margin-left: 6em;
-                padding: 3em 2em 1em;
-                width: 175px;
-                height: 500px;
-                background-color: #ffffff; */
-            }
-            li a {
-                /* display: contents;
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none; */
-            }
-            li a.active {
-                /* background-color: #ffffff;
-                color: black; */
-            }
-            li a:hover:not(.active) {
-                /* background-color: #555;
-                color: purple;
-                text-shadow: 2px 2px 4px purple; */
+        <title>mypage-favorites</title>
+        <link
+            rel="canonical"
+            href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
             }
 
-            .sub_menu {
-                /* text-align: left;
-                border: 3px solid rgb(185, 157, 247);
-                list-style-type: none;
-                font-size: 120%;
-                font-style: oblique;
-                line-height: 220%;
-                margin-top: 6em;
-                margin-left: 6em;
-                padding: 3em 2em 1em;
-                width: 175px;
-                height: 500px;
-                background-color: #ffffff; */
-
-                /* width: 30%;
-                float: left; */
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
             }
-            .sub_menu a {
-                /* display: contents;
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none; */
-            }
-            .sub_menu a.active {
-                /* background-color: #ffffff;
-                color: black; */
-            }
-            .sub_menu a:hover:not(.active) {
-                /* background-color: #555;
-                color: purple;
-                text-shadow: 2px 2px 4px purple; */
-            }
-
-            content {
-                /* width: 60%;
-                float: right; */
-            } 
         </style>
+
+        <link rel="stylesheet" href="css/style-jd.css">
+        <script src="js/sidebars.js"></script>
+        <link rel="stylesheet" href="css/sidebars.css">
+
     </head>
     <body class="bg-light">
         <div>
@@ -133,95 +93,194 @@
                         </div>
                     </div>
                 </nav>
-
             </header>
+        </div>
+        
 
-            <!-- header 끝 -->
-            
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br> 
-            <!-- 본문시작 -->
+        <!-- header 끝 -->
 
-            <!-- 제목 시작 -->
-    <div class="container">
-        <h1 class="sub-title">내정보</h1>
-        <hr>
-      </div>
-      <!-- 제목 종료 -->
+        <!-- 제목 시작 -->
+        <div class="mx-lg-5 px-lg-5">
+            <div class="container">
+                <h1 class="sub-title">내 글목록</h1>
+                <hr><br><br>
+            </div>
+        </div>
+        <!-- 제목 종료 -->
 
-            <div class="container mt-5">
+        <!-- 본문시작 -->
 
-                <div class="row">
-                    <div class="col-3 m-3 text-center" >
-                        <!-- <div class="container mt-3"> -->
-                        <div class="p-5 d-flex flex-column gap-4 " style="border: 3px solid #3f51b5;
-                                    border-radius: 250px; height: 550px; width: 80%; box-shadow: 0px 0px 1px 2px #3f51b5;">
-                          <div>
-                            <img
+        <!-- 사이드바 시작 -->
+        <div class="row" style="padding-left: 15%; padding-right: 15%; column-gap: 25px;">
+            <div
+                class="d-flex flex-column flex-shrink-0 p-4 col-md-2 menu-jd"
+                style="min-width: 230px;">
+                <div class="Info" style="display: flex;">
+                        <img
                             src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg"
-                            width="100px"
-                            height="100px"
-                            style="border-radius:50%;"/>
-                          </div>
-                          <div>
-                            <a class="active" href="#">내정보</a>
-                          </div>
-                          <div>
-                            <a href="#">즐겨찾기</a>
-                          </div>
-                          <div>
-                            <a href="#">내글목록</a>
-                          </div>
-                          <div>
-                            <a href="#">비번변경</a>
-                          </div>
-                          <div>
-                            <a href="#">탈퇴</a>
-                          </div>
-
-                        <!-- <ul class="sub_menu">
-                            <img
-                                src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg"
-                                width="100px"
-                                height="100px"
-                                style="border-radius:50%;"/>
-                            <li>
-                                <a class="active" href="#">내정보</a>
-                            </li>
-                            <li>
-                                <a href="#">즐겨찾기</a>
-                            </li>
-                            <li>
-                                <a href="#">내글목록</a>
-                            </li>
-                            <li>
-                                <a href="#">구매내역</a>
-                            </li>
-                            <li>
-                                <a href="#">비번변경</a>
-                            </li>
-                            <li>
-                                <a href="#">포인트</a>
-                            </li>
-                            <li>
-                                <a href="#">탈퇴</a>
-                            </li>
-                        </ul> -->
-                      </div>
-                    </div>
-
-                    <br>
-
-                    <!-- 내정보 -->
+                            alt=""
+                            width="70"
+                            height="70"
+                            class="rounded-circle me-3 align-items-center">
+                        <strong style="color: white;"><br>JunDong 님</strong>
+                </div>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item2">  
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use href="#"/>
+                            </svg>
+                            내정보 변경
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use href="#"/>
+                            </svg>
+                            내 글목록
+                        </a>
+                    </li>
                     
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use href="#"/>
+                            </svg>
+                            즐겨찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use href="#"/>
+                            </svg>
+                            비밀번호 변경
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use href="#"/>
+                            </svg>
+                            탈퇴
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 사이드바 끝 -->
+
+            <!-- 즐겨찾기 시작 -->
+            <div
+                class="border col"
+                style=" padding-left: 8%; padding-top: 4%; padding-bottom: 4%;">
+                <div class="row gap-5">
+                    <div class="card col-md-5 gap-2">
+                        <img src="img/dog1.jpg" class="card-img-top" alt="..."/>
+                        <!-- 북마크 아이콘 -->
+                        <i
+                            class="fa-solid fa-star fa-2x"
+                            style="position: absolute; top:10px; left: 10px; color: rgb(245, 211, 22);"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">멍멍이 찾습니다.</h5>
+                            <p class="card-text">부산 전포동/프렌치불독</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
+                                </div>
+                                <div>
+                                    <!-- 댓글수, 조회수 아이콘 -->
+                                    <i class="bi bi-star-fill"></i>
+                                    1
+                                    <i class="bi bi-chat-dots"></i>
+                                    0
+                                    <i class="bi bi-eye-fill"></i>
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-5">
+                        <img src="img/dog1.jpg" class="card-img-top" alt="..."/>
+                        <!-- 북마크 아이콘 -->
+                        <i
+                            class="fa-solid fa-star fa-2x"
+                            style="position: absolute; top:10px; left: 10px; color: rgb(245, 211, 22);"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">멍멍이 찾습니다.</h5>
+                            <p class="card-text">부산 전포동/프렌치불독</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
+                                </div>
+                                <div>
+                                    <!-- 댓글수, 조회수 아이콘 -->
+                                    <i class="bi bi-star-fill"></i>
+                                    1
+                                    <i class="bi bi-chat-dots"></i>
+                                    0
+                                    <i class="bi bi-eye-fill"></i>
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-5">
+                        <img src="img/dog1.jpg" class="card-img-top" alt="..."/>
+                        <!-- 북마크 아이콘 -->
+                        <i
+                            class="fa-solid fa-star fa-2x"
+                            style="position: absolute; top:10px; left: 10px; color: rgb(245, 211, 22);"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">멍멍이 찾습니다.</h5>
+                            <p class="card-text">부산 전포동/프렌치불독</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
+                                </div>
+                                <div>
+                                    <!-- 댓글수, 조회수 아이콘 -->
+                                    <i class="bi bi-star-fill"></i>
+                                    1
+                                    <i class="bi bi-chat-dots"></i>
+                                    0
+                                    <i class="bi bi-eye-fill"></i>
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-md-5">
+                        <img src="img/dog1.jpg" class="card-img-top" alt="..."/>
+                        <!-- 북마크 아이콘 -->
+                        <i
+                            class="fa-solid fa-star fa-2x"
+                            style="position: absolute; top:10px; left: 10px; color: rgb(245, 211, 22);"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">멍멍이 찾습니다.</h5>
+                            <p class="card-text">부산 전포동/프렌치불독</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#" class="btn text-white" style="background-color: #3f51b5">상세보기</a>
+                                </div>
+                                <div>
+                                    <!-- 댓글수, 조회수 아이콘 -->
+                                    <i class="bi bi-star-fill"></i>
+                                    1
+                                    <i class="bi bi-chat-dots"></i>
+                                    0
+                                    <i class="bi bi-eye-fill"></i>
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- 즐겨찾기 끝 -->
+
         <!-- 본문 끝 -->
 
         <!-- footer 시작 -->
@@ -273,15 +332,17 @@
             <p class="p-3 text-center">Copyright &copy; PetFinder 2022</p>
         </footer>
         <!-- footer 종료 -->
-    </div>
 
-    <!--스크립트 적용 -->
-    <script src="js/main.js"></script>
-    <!-- 부트스트랩 스크립트 적용 -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        <!--스크립트 적용 -->
+        <script src="js/main.js"></script>
+        <!-- 부트스트랩 스크립트 적용 -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-   </body>
+        <script src="sidebars.js"></script>
+
+    </body>
 </html>
